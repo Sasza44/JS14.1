@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Java Script Lesson 14</title>
+        <link rel="stylesheet" href="JavaScript_14_1.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Піца з ресторану Тяпкіна-Ляпкіна</h1>
+            <ul>
+                <li class="main_menu">Піца</li>
+                <li class="main_menu">Напої</li>
+                <li class="main_menu">Десерти</li>
+            </ul>
+        </header>
+        <section>
+            <div class="picture_container">
+                <div class="bread">
+                    <div id="discount">Отримати знижку 30%</div>
+                    <button id="previous">Попередня</button>
+                    <button id="next">Наступна</button>
+                </div>
+            </div>
+            <div class="select_ingredients">
+                <div>Конструктор піци<br>Оберіть інгредієнти<br><span class="span-select">(за замовчуванням маленька заготовка)</span></div>
+                <ul class="cheese">
+                    <li><div class="level-1">Сир&#8194</div><div class="arrow">&#8658</div>
+                        <ul class="cheese_varieties">
+                            <li class="cheese_variety">
+                                <div class="picture pecorino"></div>
+                                Пекоріно
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture gauda"></div>
+                                Гауда
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture parmezan"></div>
+                                Пармезан
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture chedder"></div>
+                                Чеддер
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture maasdam"></div>
+                                Маасдам
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture garrocha"></div>
+                                Гарроча
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture comte"></div>
+                                Конте
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture rikota"></div>
+                                Рікота
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="cheese">
+                    <li><div class="level-1">М'ясо&#8194</div><div class="arrow">&#8658</div>
+                        <ul class="cheese_varieties">
+                            <li class="cheese_variety">
+                                <div class="picture catfish"></div>
+                                Сом
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture salmon"></div>
+                                Лосось
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture elit"></div>
+                                Шинка елітна
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture king"></div>
+                                Шинка Царська
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture home"></div>
+                                Буженина домашня
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture president"></div>
+                                Ковбаса Президентська
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture ornament"></div>
+                                Ковбаса Орнамент
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture luxury"></div>
+                                Шинка Розкіш
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture hetman"></div>
+                                Ковбаса Гетьманська
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture monblan"></div>
+                                Ковбаса Монблан
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="cheese">
+                    <li><div class="level-1">Соус&#8194</div><div class="arrow">&#8658</div>
+                        <ul class="cheese_varieties">
+                            <li class="cheese_variety">
+                                <div class="picture tomato"></div>
+                                Томатний
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture vegetable"></div>
+                                Овочевий
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture cream"></div>
+                                Вершковий
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture red-wine"></div>
+                                З червоним вином
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="cheese">
+                    <li><div class="level-1">Овочі&#8194</div><div class="arrow">&#8658</div>
+                        <ul class="cheese_varieties">
+                            <li class="cheese_variety">
+                                <div class="picture corn"></div>
+                                Кукурудза
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture onion"></div>
+                                Цибуля
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture pineapple"></div>
+                                Ананас
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture mushrooms"></div>
+                                Гриби
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture pepper"></div>
+                                Перець
+                            </li>
+                            <li class="cheese_variety">
+                                <div class="picture tomato_cherry"></div>
+                                Томати чері
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="cheese">
+                    <li><div class="level-1">Змінити розмір піци&#8194</div><div class="arrow">&#8658</div>
+                        <ul class="cheese_varieties">
+                            <li class="cheese_variety without_drawing">
+                                Маленька
+                            </li>
+                            <li class="cheese_variety without_drawing">
+                                Середня
+                            </li>
+                            <li class="cheese_variety without_drawing">
+                                Велика
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="result">
+                    <div id="price">0</div>
+                    <div id="cancel">Відмінити замовлення</div>
+                    <div id="accept">Оформити замовлення</div>
+                </div>
+                
+            </div>
+            <form action="JavaScript_14_1.php" method="POST" name="feedback">
+                <div class="form_text">Ім'я</div>
+                <input type="text" name="name" required="required" placeholder="Прізвище Ім'я" pattern="[A-Za-zА-Яа-яЙйЇї ]+">
+                <div class="form_text">Телефон</div>
+                <input type="tel" name="phone" required="required" placeholder="Номер з кодом (тільки 10 цифр)" pattern="\d{10}">
+                <div class="form_text">E-mail</div>
+                <input type="email" name="email" required="required" placeholder="e-mail" pattern="[A-Za-z0-9]+@[A-Za-z0-9]+.[a-z]{2,4}">
+                <div class="form_text">Конструкція піци</div>
+                <textarea class="form_text" cols="100" rows="8" name="details" required="required" readonly></textarea>
+                <br><br>
+                <button type="submit" name="send">Відправити</button>
+            </form>
+        </section>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="JavaScript_14_1.js"></script>
+    </body>
